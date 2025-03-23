@@ -7,17 +7,17 @@ from autoviz.AutoViz_Class import AutoViz_Class
 from ydata_profiling import ProfileReport
 
 def setup_logging():
-    """ Configura o sistema de logs """
-    log_dir = os.path.join(os.path.dirname(__file__), "..", "logs")
-    os.makedirs(log_dir, exist_ok=True)
+    """ Configura o sistema de logs para serem salvos em 'Logs' """
+    log_dir = os.path.join(os.path.dirname(__file__), "..","Logs")
+    os.makedirs(log_dir, exist_ok=True)  # Garante que a pasta exista
 
     log_file = os.path.join(log_dir, "eda_project.log")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[
-            logging.FileHandler(log_file, mode="a", encoding="utf-8"),
-            logging.StreamHandler() 
+            logging.FileHandler(log_file, mode="a", encoding="utf-8"),  # Salva em arquivo
+            logging.StreamHandler()  # Exibe no console
         ]
     )
     return logging.getLogger("EDA_Project")
@@ -25,11 +25,13 @@ def setup_logging():
 logger = setup_logging()
 
 class EDAReport:
-    def __init__(self, nome_arquivo: str, df: pd.DataFrame, output_dir: str):
+    def __init__(self, nome_arquivo: str, df: pd.DataFrame):
         self.nome_arquivo = nome_arquivo
         self.df = df
-        self.output_dir = output_dir
-        os.makedirs(output_dir, exist_ok=True)
+
+        # Define a pasta para os relatórios como 'Views'
+        self.output_dir = os.path.join(os.path.dirname(__file__), "..", "..", "Views")
+        os.makedirs(self.output_dir, exist_ok=True)  # Garante que 'Views' exista
 
     def generate_autoviz(self):
         """ Gera relatório AutoViz """
@@ -58,7 +60,7 @@ class EDAReport:
         except Exception as e:
             logger.error(f"Erro ao iniciar D-Tale para {self.nome_arquivo}: {e}")
 
-    def generate_ydata(self, sample_frac: float = 0.1, min_rows: int = 500, random_state: int = 50):
+    def generate_ydata(self, sample_frac: float = 0.01, min_rows: int = 500, random_state: int = 50):
         """ Gera relatório YData Profiling com controle de amostragem """
         try:
             if len(self.df) > min_rows:
