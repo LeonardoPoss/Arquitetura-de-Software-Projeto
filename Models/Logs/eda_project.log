@@ -689,3 +689,28 @@
 2025-03-23 12:38:01,754 - INFO - D-Tale iniciado para synthetic_fraud_dataset.
 2025-03-23 12:40:28,126 - INFO - Relatório YData Profiling salvo em c:\Users\ASPIRE 3\Desktop\Pasta raiz - Arquitetura de Software\Arquitetura-de-Software-Projeto\Models\Service\..\..\Views\ydata_synthetic_fraud_dataset.html com 500 linhas.
 2025-03-23 12:40:28,199 - INFO - Processo concluído com sucesso.
+2025-03-24 19:50:34,295 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 19:50:34,315 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 19:50:34,735 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-03-24 19:51:06,353 - INFO - Relatório AutoViz gerado para synthetic_fraud_dataset.
+2025-03-24 19:51:25,472 - INFO - D-Tale iniciado para synthetic_fraud_dataset.
+2025-03-24 19:54:24,321 - INFO - Relatório YData Profiling salvo em c:\Users\ASPIRE 3\Desktop\Pasta raiz - Arquitetura de Software\Arquitetura-de-Software-Projeto\Models\Service\..\..\Views\ydata_synthetic_fraud_dataset.html com 500 linhas.
+2025-03-24 19:54:24,507 - INFO - Processo concluído com sucesso.
+2025-03-24 19:54:24,507 - INFO - Inicio do algoritmo de Classificação
+2025-03-24 19:58:19,298 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 19:58:19,298 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 20:03:03,613 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 20:03:03,613 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 20:03:03,973 - INFO - Inicio do algoritmo de Classificação
+2025-03-24 20:11:06,508 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 20:11:06,508 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 20:11:06,899 - INFO - Inicio do algoritmo de Classificação
+2025-03-24 20:11:09,595 - INFO - Classificação finalizada com sucesso
+2025-03-24 20:17:28,302 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 20:17:28,302 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 20:17:28,711 - INFO - Inicio do algoritmo de Classificação
+2025-03-24 20:17:43,399 - INFO - Classificação finalizada com sucesso
+2025-03-24 21:56:20,780 - INFO - Iniciando autenticação no Kaggle.
+2025-03-24 21:56:20,786 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-24 21:56:21,199 - INFO - Inicio do algoritmo de Classificação
+2025-03-24 21:56:29,287 - INFO - Classificação finalizada com sucesso

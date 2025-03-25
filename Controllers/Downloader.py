@@ -1,6 +1,6 @@
 import os
 
-from Controllers.Autenticador import KaggleAuthenticator  # Certifique-se que o nome do arquivo está correto!
+from Controllers.Autenticador import KaggleAuthenticator  
 
 class KaggleDownloader:
     def __init__(self, dataset_name, pasta_destino="../Arquitetura-de-Software-Projeto/Models/Dataset"):
@@ -8,17 +8,15 @@ class KaggleDownloader:
         Inicializa o downloader com o nome do dataset e pasta destino.
         """
         self.dataset_name = dataset_name
-        self.pasta_destino = os.path.abspath(pasta_destino)  # Caminho absoluto correto
+        self.pasta_destino = os.path.abspath(pasta_destino)  
         self.authenticator = KaggleAuthenticator()
         self.api = self.authenticator.get_api()
-
-        # Criar diretório com tratamento de erro
         try:
             os.makedirs(self.pasta_destino, exist_ok=True)
             print(f"📂 Diretório para download: {self.pasta_destino}")
         except Exception as e:
             print(f"❌ Erro ao criar diretório {self.pasta_destino}: {e}")
-            exit(1)  # Encerra o programa em caso de erro crítico
+            exit(1) 
 
     def verificar_e_baixar_dataset(self):
         """
