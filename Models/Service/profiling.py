@@ -1,4 +1,6 @@
 import os
+import webbrowser
+import time
 
 #API's e Frameworks
 import shap
@@ -29,13 +31,20 @@ class Profiling:
         plt.savefig(saida_arquivo, dpi=300, bbox_inches="tight")
         print(f"✅ Gráfico SHAP salvo em: {saida_arquivo}")
 
+
+
     def generate_dtale(self):
-        """ Inicia a interface interativa D-Tale """
+        """ Inicia a interface interativa D-Tale e abre no navegador """
         try:
-            dtale.show(self.df)
+            instancia = dtale.show(self.df)
+            # Espera o servidor iniciar (ajuste se necessário)
+            time.sleep(2)
+            instancia.open_browser()  # tenta abrir no navegador
+
             logger.info(f"D-Tale iniciado para {self.nome_arquivo}.")
         except Exception as e:
             logger.error(f"Erro ao iniciar D-Tale para {self.nome_arquivo}: {e}")
+
 
     def generate_ydata(self, sample_frac: float = 0.01, min_rows: int = 500, random_state: int = 50):
         """ Gera relatório YData Profiling com controle de amostragem """

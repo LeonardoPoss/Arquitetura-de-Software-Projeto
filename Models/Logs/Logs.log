@@ -2,3 +2,48 @@
 2025-04-14 20:11:45,922 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
 2025-04-14 20:18:22,028 - INFO - Iniciando autenticação no Kaggle.
 2025-04-14 20:18:22,028 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-14 21:22:39,090 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:22:39,096 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:23:33,443 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:23:33,447 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:24:06,817 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:24:06,817 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:24:22,088 - INFO - Abrindo D-Tale
+
+2025-04-14 21:27:52,696 - INFO - Abrindo D-Tale
+
+2025-04-14 21:34:08,425 - INFO - Abrindo D-Tale
+
+2025-04-14 21:38:45,631 - INFO - Abrindo D-Tale
+
+2025-04-14 21:41:36,168 - INFO - Abrindo D-Tale
+
+2025-04-14 22:00:33,746 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:00:33,764 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:02:39,056 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:02:39,056 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:03:28,379 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:03:28,379 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:03:49,022 - INFO - Abrindo D-Tale
+
+2025-04-14 22:09:52,836 - INFO - Abrindo D-Tale
+
+2025-04-14 22:10:53,353 - INFO - D-Tale iniciado para synthetic_fraud_dataset.csv.
+2025-04-14 22:16:17,393 - INFO - Abrindo D-Tale
+
+2025-04-14 22:16:39,691 - ERROR - Erro ao iniciar D-Tale para synthetic_fraud_dataset.csv: 'DtaleData' object has no attribute 'main'
+2025-04-14 22:19:16,555 - INFO - Abrindo D-Tale
+
+2025-04-14 22:19:37,337 - ERROR - Erro ao iniciar D-Tale para synthetic_fraud_dataset.csv: 'DtaleData' object has no attribute 'main'

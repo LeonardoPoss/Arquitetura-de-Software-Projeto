@@ -1,8 +1,6 @@
 import os
 
 from Controllers.Autenticador import KaggleAuthenticator  
-
-import os
 from Controllers.Autenticador import KaggleAuthenticator  
 
 class KaggleDownloader:
@@ -31,15 +29,15 @@ class KaggleDownloader:
         Verifica se o dataset já existe localmente e, se não, baixa do Kaggle.
         """
         extensoes_validas = {".csv", ".json", ".xlsx", ".zip", ".txt"}
-        arquivos_existentes = [
-            f for f in os.listdir(self.pasta_destino)
-            if os.path.isfile(os.path.join(self.pasta_destino, f)) 
-            and os.path.splitext(f)[1] in extensoes_validas
-        ]
+        # arquivos_existentes = [
+        #     f for f in os.listdir(self.pasta_destino)
+        #     if os.path.isfile(os.path.join(self.pasta_destino, f)) 
+        #     and os.path.splitext(f)[1] in extensoes_validas
+        # ]
 
-        if arquivos_existentes:
-            print(f"✅ O dataset já foi baixado em '{self.pasta_destino}'.")
-            return
+        # if arquivos_existentes:
+        #     print(f"✅ O dataset já foi baixado em '{self.pasta_destino}'.")
+        #     return
 
         try:
             print(f"📥 Baixando dataset: {self.dataset_name}...")
