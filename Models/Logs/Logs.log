@@ -47,3 +47,6 @@
 2025-04-14 22:19:16,555 - INFO - Abrindo D-Tale
 
 2025-04-14 22:19:37,337 - ERROR - Erro ao iniciar D-Tale para synthetic_fraud_dataset.csv: 'DtaleData' object has no attribute 'main'
+2025-04-14 22:20:44,956 - INFO - Abrindo D-Tale
+
+2025-04-14 22:21:07,925 - INFO - D-Tale iniciado para synthetic_fraud_dataset.csv.
