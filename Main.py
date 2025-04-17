@@ -1,20 +1,24 @@
 import sys
+import time
 import pandas as pd
 
 from Models.Logger.Logging import *
 from Models.Service.profiling import *
 from Controllers.Downloader import KaggleDownloader
 from Models.Service.Archive_Selector import escolher_dataset
+from Models.Service.Trainer import PyCaretTrainer
 
 logger = setup_logging()
 def Main():
+    print("⏳ Aguardando 10 segundos antes de iniciar...")
+    time.sleep(10)
     while True:
         try:
             valor = int(input(
                 "\nDigite uma opção:\n"
                 "1 - Baixar um Dataset\n"
                 "2 - Abrir D-Tale\n"
-                "3 - Gerar Profiling e Imagem SHAP\n"
+                "3 - Gerar Profiling YData\n"
                 "4 - Treinar com PyCaret\n"
                 "5 - Sair\n> "
             ))
@@ -31,6 +35,7 @@ def Main():
                     else:
                         logger.error("\nFalha na autenticação do Kaggle. Encerrando aplicação.\n")
                         sys.exit(1)
+                        
                 case 2:
                     logger.info("Abrindo D-Tale\n")
                     caminho_dataset = escolher_dataset()
@@ -46,14 +51,37 @@ def Main():
                         logger.info("🚫 Nenhum dataset selecionado.")
                 
                 case 3:
-                    print("Opção 3 selecionada: Gerar profiling e imagem SHAP.")
+                    logger.info("Iniciando a geração do arquivo YData e Imagem Shap\n")
+                    caminho_dataset = escolher_dataset()
+                    if caminho_dataset:
+                        try:
+                            df = pd.read_csv(caminho_dataset)
+                            nome_arquivo = os.path.basename(caminho_dataset)
+                            profiling = Profiling(nome_arquivo, df)
+                            profiling.generate_ydata()
+                        except Exception as e:
+                            logger.error(f"Erro na geração {e}")
+                    else:
+                        logger.info("🚫 Nenhum dataset selecionado.")
 
-                    
                 case 4:
-                    print("Opção 4 selecionada: Treinamento com PyCaret.")
-                    # Chamada para função de treino aqui
-                    # ex: treinar_modelo()
-
+                    logger.info("Iniciando o treinamento do modelo com PyCaret\n")        
+                    caminho_dataset = escolher_dataset()       
+                    if caminho_dataset:
+                        try:
+                            df = pd.read_csv(caminho_dataset)
+                            nome_arquivo = os.path.basename(caminho_dataset)
+                            
+                            target = "Fraud_Label"
+                            trainer = PyCaretTrainer()
+                            
+                            task_type = "classification"  # Ou "regression" ou "clustering"
+                            model = trainer.train_model(df, target, task_type,)
+                            logger.info(f"✅ Modelo treinado: {model}")
+                        except Exception as e:
+                            logger.error(f"Erro no treinamento do modelo: {e}")
+                    else:
+                        logger.info("🚫 Nenhum dataset selecionado.")
                 case 5:
                     print("Saindo...")
                     break

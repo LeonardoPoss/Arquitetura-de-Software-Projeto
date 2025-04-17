@@ -20,7 +20,7 @@ class Profiling:
         self.df = df
 
         # Define a pasta para os relatórios como 'Views'
-        self.output_dir = os.path.join(os.path.dirname(__file__), "..", "..", "Views")
+        self.output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "Views"))
         os.makedirs(self.output_dir, exist_ok=True)  # Garante que 'Views' exista
         
     def gerar_shap(self, saida_arquivo="shap_summary_plot.png"):
