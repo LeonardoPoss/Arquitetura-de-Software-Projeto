@@ -1,0 +1,82 @@
+2025-04-14 20:11:45,891 - INFO - Iniciando autenticação no Kaggle.
+2025-04-14 20:11:45,922 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-14 20:18:22,028 - INFO - Iniciando autenticação no Kaggle.
+2025-04-14 20:18:22,028 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-14 21:22:39,090 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:22:39,096 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:23:33,443 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:23:33,447 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:24:06,817 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 21:24:06,817 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 21:24:22,088 - INFO - Abrindo D-Tale
+
+2025-04-14 21:27:52,696 - INFO - Abrindo D-Tale
+
+2025-04-14 21:34:08,425 - INFO - Abrindo D-Tale
+
+2025-04-14 21:38:45,631 - INFO - Abrindo D-Tale
+
+2025-04-14 21:41:36,168 - INFO - Abrindo D-Tale
+
+2025-04-14 22:00:33,746 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:00:33,764 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:02:39,056 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:02:39,056 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:03:28,379 - INFO - Iniciando autenticação no Kaggle.
+
+2025-04-14 22:03:28,379 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+
+2025-04-14 22:03:49,022 - INFO - Abrindo D-Tale
+
+2025-04-14 22:09:52,836 - INFO - Abrindo D-Tale
+
+2025-04-14 22:10:53,353 - INFO - D-Tale iniciado para synthetic_fraud_dataset.csv.
+2025-04-14 22:16:17,393 - INFO - Abrindo D-Tale
+
+2025-04-14 22:16:39,691 - ERROR - Erro ao iniciar D-Tale para synthetic_fraud_dataset.csv: 'DtaleData' object has no attribute 'main'
+2025-04-14 22:19:16,555 - INFO - Abrindo D-Tale
+
+2025-04-14 22:19:37,337 - ERROR - Erro ao iniciar D-Tale para synthetic_fraud_dataset.csv: 'DtaleData' object has no attribute 'main'
+2025-04-14 22:20:44,956 - INFO - Abrindo D-Tale
+
+2025-04-14 22:21:07,925 - INFO - D-Tale iniciado para synthetic_fraud_dataset.csv.
+2025-04-17 14:59:37,288 - INFO - Iniciando a geração do arquivo YData e Imagem Shap
+
+2025-04-17 15:00:15,318 - INFO - Relatório YData Profiling salvo em c:\Users\ASPIRE 3\Desktop\Pasta raiz - Arquitetura de Software\Arquitetura-de-Software-Projeto\Models\Service\..\..\Views\ydata_synthetic_fraud_dataset.csv.html com 500 linhas.
+2025-04-17 15:00:15,327 - ERROR - Erro na geração 'Profiling' object has no attribute 'model'
+2025-04-17 15:10:23,997 - INFO - Iniciando a geração do arquivo YData e Imagem Shap
+
+2025-04-17 15:10:53,524 - INFO - Relatório YData Profiling salvo em c:\Users\ASPIRE 3\Desktop\Pasta raiz - Arquitetura de Software\Arquitetura-de-Software-Projeto\Models\Service\..\..\Views\ydata_synthetic_fraud_dataset.csv.html com 500 linhas.
+2025-04-17 15:14:55,187 - INFO - Iniciando a geração do arquivo YData e Imagem Shap
+
+2025-04-17 15:15:30,162 - INFO - Relatório YData Profiling salvo em c:\Users\ASPIRE 3\Desktop\Pasta raiz - Arquitetura de Software\Arquitetura-de-Software-Projeto\Views\ydata_synthetic_fraud_dataset.csv.html com 500 linhas.
+2025-04-17 16:05:31,478 - INFO - Iniciando o treinamento do modelo com PyCaret
+
+2025-04-17 16:10:42,185 - INFO - ✅ Modelo treinado: GaussianNB(priors=None, var_smoothing=1e-09)
+2025-04-17 16:33:57,995 - INFO - Iniciando o treinamento do modelo com PyCaret
+
+2025-04-17 16:37:56,093 - INFO - ✅ Modelo treinado: GaussianNB(priors=None, var_smoothing=1e-09)
+2025-04-17 16:58:31,521 - INFO - Iniciando o treinamento do modelo com PyCaret
+
+2025-04-17 16:59:02,612 - INFO - ✅ Modelo treinado: LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0, verbose=-1)
+2025-04-17 17:09:59,529 - INFO - Iniciando o treinamento do modelo com PyCaret
+
+2025-04-17 17:13:45,433 - INFO - ✅ Modelo treinado: GaussianNB(priors=None, var_smoothing=1e-09)
+2025-04-19 01:14:51,836 - INFO - Iniciando o treinamento do modelo com PyCaret
+
+2025-04-19 01:18:41,926 - INFO - ✅ Modelo treinado: GaussianNB(priors=None, var_smoothing=1e-09)
