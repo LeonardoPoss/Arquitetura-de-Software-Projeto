@@ -3,7 +3,6 @@ import webbrowser
 import time
 
 #API's e Frameworks
-import shap
 import matplotlib.pyplot as plt
 import pandas as pd
 import dtale
@@ -22,16 +21,6 @@ class Profiling:
         # Define a pasta para os relatórios como 'Views'
         self.output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "Views"))
         os.makedirs(self.output_dir, exist_ok=True)  # Garante que 'Views' exista
-        
-    def gerar_shap(self, saida_arquivo="shap_summary_plot.png"):
-        explainer = shap.TreeExplainer(self.model)
-        shap_values = explainer.shap_values(self.X_test)
-        plt.figure(figsize=(10, 6))
-        shap.summary_plot(shap_values, self.X_test, show=False)
-        plt.savefig(saida_arquivo, dpi=300, bbox_inches="tight")
-        print(f"✅ Gráfico SHAP salvo em: {saida_arquivo}")
-
-
 
     def generate_dtale(self):
         """ Inicia a interface interativa D-Tale e abre no navegador """
