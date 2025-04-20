@@ -1,6 +1,6 @@
 Leonardo de Lima Póss
 
-Para executar, é necessário desabilitar a procura automática da APi do Kaggle.
+Para executar, pode ser necessário desabilitar a procura automática da APi do Kaggle.
 
 A exemplo :
 " File "C:\Users\ASPIRE 3\AppData\Local\Programs\Python\Python310\lib\site-packages\kaggle\__init__.py", line 6, in <module>
